@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=UTF-8" />
+<title>本のタイトル</title>
+<meta name="author" content="著者名" />
+<style type="text/css">
+div.title-page {
+    margin:0 auto;
+    text-align: center;
+}
+div.title-page h1 {
+    font:normal normal 1.5em sans-serif;
+}
+div.title-page p {
+    font:normal normal 1.5em sans-serif;
+}
+h2 {
+    page-break-before:always;
+}
+nav ol {
+    list-style:none;
+}
+p {
+    text-indent:1em;
+}
+pre {
+    padding:2%;
+    border:solid thin #CCC;
+    border-radius:0.2em;
+    background-color:#EEE;
+    font-size:0.9em;
+    line-height:0.9;
+}
+pre code {
+    font-family:Osaka-mono, "MS Gothic", "Source Code Pro", Courier, monospace;
+}
+blockquote {
+    margin-left:2.5%;
+    margin-right:2.5%;
+    padding-left:2.5%;
+    border-left-style:solid;
+    border-left-width:medium;
+    border-left-color:#CCC;
+    color:#999;
+}
+blockquote p {
+    text-indent:0;
+}
+div.footnotes {
+    font-size:0.8em;
+    line-height:1.4;
+}
+div.footnotes p {
+    text-indent:0;
+}
+div.column {
+    padding:2%;
+    border:solid medium #CCC;
+    border-radius:0.4em;
+}
+div.column h3 {
+    margin:0;
+    border-bottom-style:solid;
+    border-bottom-width:medium;
+    border-bottom-color:#CCC;
+}
+div.column p {
+    margin:0.5em 0 0 0;
+}
+div.figure {
+    margin:0 auto;
+    text-align:center;
+    line-height:1;
+}
+img {
+    width:90%;
+    height:auto;
+    border:solid thin #CCC;
+}
+p.caption {
+    font-size:0.75em;
+    margin-top:0;
+}
+div.colophon pre {
+    font-size:1em;
+    line-height:1.5;
+    padding:0;
+    border:none;
+    background-color:transparent;
+}
+</style>
+</head>
+<body>
+  <div class="title-page">
+    <h1 id="title-page">本のタイトル<br />
+本のサブタイトル</h1>
+    <p>著者名</p>
+  </div>
+
+  <nav id="toc" epub:type="toc">
+    <h2>目次</h2>
+    <ol>
+      <li>
+        <a href="#start">はじめに</a>
+      </li>
+      <li>
+        <a href="#chapter1">第1章 …………</a>
+      </li>
+      <li>
+        <a href="#chapter2">第2章 …………</a>
+      </li>
+      <li>
+        <a href="#chapter3">第3章 …………</a>
+      </li>
+      <!-- 目次のアイテムを列挙する。 -->
+    </ol>
+  </nav>
+  <nav id="landmarks" epub:type="landmarks"
+  hidden="hidden">
+    <h2>ガイド</h2>
+    <ol>
+      <li>
+        <a epub:type="toc" href="#toc">目次</a>
+      </li>
+      <li>
+        <a epub:type="bodymatter" href="#start">本文</a>
+      </li>
+    </ol>
+  </nav>
+
+  <div class="front-matter">
+    <h2 id="start">はじめに</h2>
+    <p>……</p>
+  </div>
+
+  <div class="chapter">
+    <h2 id="chapter1">第1章 ……</h2>
+    <p>……</p>
+    <h3>1-1節 ……</h3>
+      <pre><code>整形済みテキスト部分
+……</code></pre>
+      <p>……</p>
+      <blockquote><p>引用部分<br />
+        ……
+      </p></blockquote>
+  </div>
+
+  <div class="chapter">
+    <h2 id="chapter2">第2章 ……</h2>
+    <p>……</p>
+    <h3>2-1節 ……</h3>
+    <p>……脚注を参照する。
+    <a href="#fn1" class="footnoteRef" id="fnref1">
+      <sup>1</sup>
+    </a></p>
+    <div class="column">
+      <h3>コラム：……</h3>
+      <p>……</p>
+    </div>
+  </div>
+
+  <div class="chapter">
+    <h2 id="chapter3">第3章 ……</h2>
+    <p>……</p>
+    <h3>3-1節 ……</h3>
+    <div class="figure">
+      <img src="figure.png" alt="図版のキャプション" />
+      <p class="caption">図版のキャプション</p>
+    </div>
+    <p>……</p>
+  </div>
+  <!-- 章のブロックを好きなだけ書く。 -->
+
+  <div class="footnotes">
+    <hr />
+    <ol>
+      <li id="fn1"><p>脚注のリスト<a href="#fnref1">↩</a></p></li>
+      <!-- 脚注のアイテムを列挙する。 -->
+    </ol>
+  </div>
+
+  <div class="appendix">
+    <h2 id="appendix">付録</h2>
+    <h3 id="appendix-A">付録 A - ……</h3>
+    <p>……</p>
+    <h3 id="appendix-B">付録 B - ……</h3>
+    <p>……</p>
+    <h3 id="appendix-C">付録 C - ……</h3>
+    <p>……</p>
+  </div>
+
+  <div class="back-matter">
+    <h2 id="bibliography">参考文献</h2>
+    <ul>
+      <li>参考文献のリスト</li>
+      <!-- 参考文献を列挙する。 -->
+    </ul>
+    <h2 id="glossary">用語集</h2>
+    <p>……</p>
+    <h2 id="postscript">あとがき</h2>
+    <p>……</p>
+    <h2 id="profile">著者紹介</h2>
+    <p>……</p>
+  </div>
+
+  <div class="colophon">
+    <h2 id="colophon">本のタイトル</h2>
+    <h3>本のサブタイトル</h3>
+    <pre>2099年99月99日 第9版発行
+
+著者　　著者名
+発行者　発行者名
+　　　　<a href="http://example.com/">http://example.com/</a>
+　　　　<a href="mailto:author@example.com">mailto:author@example.com</a>
+</pre><pre>
+©2099 author
+</pre>
+  </div>
+</body>
+</html>

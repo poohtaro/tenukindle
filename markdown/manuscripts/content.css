@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+div.title-page {
+    margin:0 auto;
+    text-align: center;
+}
+div.title-page h1 {
+    font:normal normal 1.5em sans-serif;
+}
+div.title-page p {
+    font:normal normal 1.5em sans-serif;
+}
+h2 {
+    page-break-before:always;
+}
+nav ol {
+    list-style:none;
+}
+p {
+    text-indent:1em;
+}
+pre {
+    padding:2%;
+    border:solid thin #CCC;
+    border-radius:0.2em;
+    background-color:#EEE;
+    font-size:0.9em;
+    line-height:0.9;
+}
+pre code {
+    font-family:Osaka-mono, "MS Gothic", "Source Code Pro", Courier, monospace;
+}
+blockquote {
+    margin-left:2.5%;
+    margin-right:2.5%;
+    padding-left:2.5%;
+    border-left-style:solid;
+    border-left-width:medium;
+    border-left-color:#CCC;
+    color:#999;
+}
+blockquote p {
+    text-indent:0;
+}
+div.footnotes {
+    font-size:0.8em;
+    line-height:1.4;
+}
+div.footnotes p {
+    text-indent:0;
+}
+div.column {
+    padding:2%;
+    border:solid medium #CCC;
+    border-radius:0.4em;
+}
+div.column h3 {
+    margin:0;
+    border-bottom-style:solid;
+    border-bottom-width:medium;
+    border-bottom-color:#CCC;
+}
+div.column p {
+    margin:0.5em 0 0 0;
+}
+div.figure {
+    margin:0 auto;
+    text-align:center;
+    line-height:1;
+}
+img {
+    width:90%;
+    height:auto;
+    border:solid thin #CCC;
+}
+p.caption {
+    font-size:0.75em;
+    margin-top:0;
+}
+div.colophon pre {
+    font-size:1em;
+    line-height:1.5;
+    padding:0;
+    border:none;
+    background-color:transparent;
+}
