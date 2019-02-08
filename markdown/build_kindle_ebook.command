@@ -65,6 +65,8 @@ cat ./manuscripts/colophon.html
 printf "%s" "$XHTML_TAIL"
 } >> ./source/content.html
 
+sed -i.bak -e 's/<li \(id="fn.*"\)><p>\(.*\)\(<a href="#fnref.*" class="footnote-back">↩<\/a>\)<\/p><\/li>/<li><p \1>\3\2<\/p><\/li>/' ./source/content.html
+
 cp ./manuscripts/*.gif ./source && true
 cp ./manuscripts/*.bmp ./source && true
 cp ./manuscripts/*.jpg ./source && true
