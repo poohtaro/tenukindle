@@ -50,14 +50,14 @@ cat ./manuscripts/front-matter-crust.html \
 ./manuscripts/column1.md \
 ./manuscripts/column-crust-end.html \
 ./manuscripts/chapter-crust.html \
-./manuscripts/chapter3.md | pandoc -t html4
+./manuscripts/chapter3.md | pandoc --wrap=preserve -t html4
 } >> ./source/content.html
 
 {
 cat ./manuscripts/appendix-crust.html \
 ./manuscripts/appendix.md \
 ./manuscripts/back-matter-crust.html \
-./manuscripts/back-matter.md | pandoc -t html4
+./manuscripts/back-matter.md | pandoc --wrap=preserve -t html4
 } >> ./source/content.html
 
 {
@@ -65,7 +65,7 @@ cat ./manuscripts/colophon.html
 printf "%s" "$XHTML_TAIL"
 } >> ./source/content.html
 
-sed -i.bak -e 's/<li \(id="fn.*"\)><p>\(.*\)\(<a href="#fnref.*" class="footnote-back">↩<\/a>\)<\/p><\/li>/<li><p \1>\3\2<\/p><\/li>/' ./source/content.html
+sed -i.bak -e 's/<li \(id="fn.*"\)><p>\(.*\)\(<a href="#fnref.*\)>.*<\/a><\/p><\/li>/<li><p \1>\3\>^ \<\/a\>\2<\/p><\/li>/' ./source/content.html
 
 cp ./manuscripts/*.gif ./source && true
 cp ./manuscripts/*.bmp ./source && true
