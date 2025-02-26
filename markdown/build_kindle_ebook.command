@@ -2,7 +2,6 @@
 set -eu
 umask 0022
 IFS=$(printf ' \t\n_'); IFS=${IFS%_}
-PATH='/usr/local/bin:/usr/bin:/bin'
 export IFS LC_ALL=C LANG=C PATH
 
 PATH_MYSELF=$(dirname "$0")
