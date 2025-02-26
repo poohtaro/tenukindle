@@ -4,8 +4,7 @@ umask 0022
 IFS=$(printf ' \t\n_'); IFS=${IFS%_}
 export IFS LC_ALL=C LANG=C PATH
 
-PATH_MYSELF=$(dirname "$0")
-NORMALIZED_PAHT_MYSELF=$(cd "${PATH_MYSELF}"; pwd)
+NORMALIZED_PAHT_MYSELF="$(cd -- "$(dirname -- "$0")" && pwd)"
 
 XHTML_HEAD='<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>
